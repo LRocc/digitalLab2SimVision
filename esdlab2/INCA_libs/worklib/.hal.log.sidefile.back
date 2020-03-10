@@ -1,0 +1,28 @@
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+halsynth: *M,_SCOPE: :
+halsynth: *N,FSMIDN (./control.vhd,109|0): In module/design-unit 'control:behavior', FSM for state register 'present_state' has been recognized.
+halsynth: *W,BADFSM (./control.vhd,83|0): In module/design-unit 'control:behavior', FSM for state register 'present_state' does not adhere to modeling style guidelines.
+halsynth: *W,TRNMBT (./control.vhd,119|0): For the specified state 'SETUPA', the state value changes by more than one bits on transition to state(s): SETUPB.
+halsynth: (./control.vhd,122|0): Source HDL information for the error/warning mentioned above.
+halsynth: *W,TRNMBT (./control.vhd,125|0): For the specified state 'SETUPB', the state value changes by more than one bits on transition to state(s): DATA_XFER.
+halsynth: (./control.vhd,129|0): Source HDL information for the error/warning mentioned above.
+halsynth: *W,TRNMBT (./control.vhd,135|0): For the specified state 'SETUP_X', the state value changes by more than one bits on transition to state(s): POLL_FIFO.
+halsynth: (./control.vhd,103|0): Source HDL information for the error/warning mentioned above.
+halsynth: *W,TRNMBT (./control.vhd,141|0): For the specified state 'DATA_XFER', the state value changes by more than one bits on transition to state(s): POLL_FIFO.
+halsynth: (./control.vhd,103|0): Source HDL information for the error/warning mentioned above.
+halsynth: *W,TRNMBT (./control.vhd,145|0): For the specified state 'DATA_YFER', the state value changes by more than one bits on transition to state(s): POLL_FIFO.
+halsynth: (./control.vhd,103|0): Source HDL information for the error/warning mentioned above.
+halsynth: *E,UNRCHS (./control.vhd,109|0): In module/design-unit 'control:behavior', FSM for state register 'present_state' has unreachable states SETUP_X, SETUP_Y.
+halsynth: (./control.vhd,135|0): Source HDL information for the error/warning mentioned above.
+halsynth: (./control.vhd,138|0): Source HDL information for the error/warning mentioned above.
+halsynth: *W,EXTFSM (./control.vhd,69|0): Extraneous logic present in module/design-unit 'control:behavior' that encodes an FSM.
+~:CLKOUT
+~:CLKSRD
+~:COMBLP
+~:INPOUT
+~:MUDREG
+~:MULWIR
+~:UNDRIV
+halsynth: Total errors   = 1.
+halsynth: Total warnings = 7.

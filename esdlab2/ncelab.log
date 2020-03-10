@@ -1,0 +1,4 @@
+ncelab: 15.20-s079: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+ncelab: *W,ARCMRA: Elaborating the WORKLIB.TESTBENCH_XBAR:SCHEMATIC, MRA (most recently analyzed) architecture.
+ncelab: Memory Usage - 40.2M program + 17.8M data = 58.0M total (Peak 62.0M)
+ncelab: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.4s, 18.5% cpu)

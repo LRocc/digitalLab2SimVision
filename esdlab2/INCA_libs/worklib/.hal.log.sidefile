@@ -1,0 +1,417 @@
+hal: Options:   -cdslib /home/CAMPUS/2265986r/esdlab2/cds.lib -logfile hal.log worklib.control:behavior.
+hal: Snapshot:  worklib.control:behavior.
+hal: Workspace: /home/CAMPUS/2265986r/esdlab2.
+hal: Date: Tue Feb 18 16:46:22 GMT 2020.
+hal: Running on elaborated SNAPSHOT.....
+hal: *M,_SCOPE: __dummy_top
+halcheck: *M,_SCOPE: :
+halcheck: *W,MAXLEN (./control.vhd,73|0): The HDL source line is 87 characters, which exceeds the recommended length of 80 characters.
+halcheck: *W,CTLCHR (./control.vhd,112|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./control.vhd,113|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./control.vhd,114|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./control.vhd,115|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./control.vhd,116|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./control.vhd,117|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./control.vhd,118|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./control.vhd,121|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./control.vhd,122|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./control.vhd,123|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./control.vhd,124|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./control.vhd,126|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./control.vhd,127|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./control.vhd,128|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./control.vhd,129|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./control.vhd,130|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./control.vhd,131|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./control.vhd,132|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./control.vhd,133|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./control.vhd,136|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./control.vhd,142|0): HDL source line contains one or more control characters.
+halcheck: *W,CTLCHR (./control.vhd,146|0): HDL source line contains one or more control characters.
+halcheck: *W,STYVAL (./control.vhd,62|0): Numeric value '7' used for identifier 'data_in'. Use constants to avoid portability issues.
+halcheck: *N,PRTCNT (./control.vhd,54|0): Module/Entity 'control' contains '10' ports.
+halcheck: (./control.vhd,54): Number of Input ports: 6.
+halcheck: (./control.vhd,54): Number of Output ports: 4.
+halcheck: *W,UCCONN (./control.vhd,73|0): Lowercase characters used for identifier 'states'. Use uppercase characters for names of constants and user-defined types.
+halcheck: *W,BEHINI (./control.vhd,77|0): A behavioral variable/signal 'present_state' is not initialized in its declaration.
+halcheck: *W,NOBLKN (./control.vhd,83|0): Each block should be labeled with a meaningful name.
+halcheck: *N,ALOWID (./control.vhd,89|0): Signal/variable name 'reset' does not follow the active-low naming convention : should end with '_n'.
+halcheck: *W,CDEFCV (./control.vhd,109|0): The case items of the case statement in module/design-unit CONTROL:BEHAVIOR cover all the numerical values of the case expression. The default clause is not required.
+halcheck: *N,ALOWID (./control.vhd,112|0): Signal/variable name 'available' does not follow the active-low naming convention : should end with '_n'.
+halcheck: *N,ALOWID (./control.vhd,130|0): Signal/variable name 'data_in(0)' does not follow the active-low naming convention : should end with '_n'.
+halcheck: *W,PROSIG (./control.vhd,77|0): Signal 'PRESENT_STATE' defined in architecture 'behavior' is used inside only one process. Use variable instead.
+halcheck: *W,USEPRT (./control.vhd,62|0): The input/inout port 'data_in(7 downto 1)' defined in the architecture 'behavior' is unused (neither read nor assigned).
+halcheck: *W,USEPRT (./control.vhd,63|0): The input/inout port 'gntx' defined in the architecture 'behavior' is unused (neither read nor assigned).
+@:gntx 
+halcheck: *W,USEPRT (./control.vhd,64|0): The input/inout port 'gnty' defined in the architecture 'behavior' is unused (neither read nor assigned).
+@:gnty 
+halcheck: *N,INPPRT (./control.vhd,60|0): Input port 'available' does not follow the layout convention.
+halcheck: *N,CLKPRT (./control.vhd,61|0): Clock port 'clk' does not follow the layout convention.
+halcheck: *N,INPPRT (./control.vhd,62|0): Input port 'data_in' does not follow the layout convention.
+halcheck: *N,INPPRT (./control.vhd,63|0): Input port 'gntx' does not follow the layout convention.
+halcheck: *N,INPPRT (./control.vhd,64|0): Input port 'gnty' does not follow the layout convention.
+halcheck: *N,RSTPRT (./control.vhd,65|0): Reset port 'reset' does not follow the layout convention.
+halcheck: *W,USEPKG (./control.vhd,54|0): Package 'NUMERIC_STD' is declared but no object is used from it.
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 33.
+hal: *M,_SCOPE: __dummy_top
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+halsynth: *M,_SCOPE: :
+halsynth: *N,FSMIDN (./control.vhd,109|0): In module/design-unit 'control:behavior', FSM for state register 'present_state' has been recognized.
+halsynth: *W,BADFSM (./control.vhd,83|0): In module/design-unit 'control:behavior', FSM for state register 'present_state' does not adhere to modeling style guidelines.
+halsynth: *W,TRNMBT (./control.vhd,119|0): For the specified state 'SETUPA', the state value changes by more than one bits on transition to state(s): SETUPB.
+halsynth: (./control.vhd,122|0): Source HDL information for the error/warning mentioned above.
+halsynth: *W,TRNMBT (./control.vhd,125|0): For the specified state 'SETUPB', the state value changes by more than one bits on transition to state(s): DATA_XFER.
+halsynth: (./control.vhd,129|0): Source HDL information for the error/warning mentioned above.
+halsynth: *W,TRNMBT (./control.vhd,135|0): For the specified state 'SETUP_X', the state value changes by more than one bits on transition to state(s): POLL_FIFO.
+halsynth: (./control.vhd,103|0): Source HDL information for the error/warning mentioned above.
+halsynth: *W,TRNMBT (./control.vhd,141|0): For the specified state 'DATA_XFER', the state value changes by more than one bits on transition to state(s): POLL_FIFO.
+halsynth: (./control.vhd,103|0): Source HDL information for the error/warning mentioned above.
+halsynth: *W,TRNMBT (./control.vhd,145|0): For the specified state 'DATA_YFER', the state value changes by more than one bits on transition to state(s): POLL_FIFO.
+halsynth: (./control.vhd,103|0): Source HDL information for the error/warning mentioned above.
+halsynth: *E,UNRCHS (./control.vhd,109|0): In module/design-unit 'control:behavior', FSM for state register 'present_state' has unreachable states SETUP_X, SETUP_Y.
+halsynth: (./control.vhd,135|0): Source HDL information for the error/warning mentioned above.
+halsynth: (./control.vhd,138|0): Source HDL information for the error/warning mentioned above.
+halsynth: *W,EXTFSM (./control.vhd,69|0): Extraneous logic present in module/design-unit 'control:behavior' that encodes an FSM.
+~:CLKOUT
+~:CLKSRD
+~:COMBLP
+~:INPOUT
+~:MUDREG
+~:MULWIR
+~:UNDRIV
+halsynth: Total errors   = 1.
+halsynth: Total warnings = 7.
+hal: *M,_SCOPE: __dummy_top
+halstruct: *M,_SCOPE: :
+halstruct: *N,FFASRT (./control.vhd,103|0): Flip-flop 'present_state' has an asynchronous reset 'reset'.
+@:$$cpiST_28_1120 
+@:present_state 
+@:reset 
+@:: :
+halstruct: *N,CLKINF (./control.vhd,61|0): Signal ':clk' was inferred as clock.
+@:clk 
+@:$$cpiST_28_1120 
+@:present_state 
+halstruct: (./control.vhd,61): Clock source is signal ':clk'.
+@:clk 
+halstruct: (./control.vhd,103): Drives the flip-flop ':present_state'.
+@:clk 
+halstruct: *N,FFASRT (./control.vhd,104|0): Flip-flop 'enable' has an asynchronous reset 'reset'.
+@:$$cpiST_28_1148 
+@:enable 
+@:reset 
+@:: :
+halstruct: *N,FFASRT (./control.vhd,105|0): Flip-flop 'reqx' has an asynchronous reset 'reset'.
+@:$$cpiST_28_1176 
+@:reqx 
+@:reset 
+@:: :
+halstruct: *N,FFASRT (./control.vhd,106|0): Flip-flop 'reqy' has an asynchronous reset 'reset'.
+@:$$cpiST_28_1204 
+@:reqy 
+@:reset 
+@:: :
+halstruct: *N,FFASRT (./control.vhd,146|0): Flip-flop 'write' has an asynchronous reset 'reset'.
+@:$$cpiST_28_1232 
+@:write 
+@:reset 
+@:: :
+halstruct: *N,NUMDFF (./control.vhd,69|0): Number of single-bit D flip-flops present in the hierarchy is 7.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 0.
+halstruct: Total warnings = 0.
+~:DSCNCK
+^:DSCNCK
+~:SLENEX
+^:SLENEX
+~:DSCNEN
+^:DSCNEN
+~:PCNOTC
+^:PCNOTC
+~:INPASN
+~:UNCONN
+~:UNDRIV
+~:USEPRT
+~:UASPRT
+~:URDPRT
+~:GATCLK
+~:RENAME
+~:RWRACE
+~:WWRACE
+~:LPISCS
+~:LPSRCS
+~:CMBPAU
+^:CMBPAU
+~:ASNCFL
+^:ASNCFL
+~:CONTLN
+^:CONTLN
+~:LATINF
+^:LATINF
+~:MULMCK
+^:MULMCK
+~:FFCKNP
+^:FFCKNP
+~:GTDCLK
+^:GTDCLK
+~:CLKLAT
+^:CLKLAT
+~:CLKNPI
+^:CLKNPI
+~:GTCLKN
+^:GTCLKN
+~:MRSTDT
+^:MRSTDT
+~:FDTHRU
+^:FDTHRU
+~:DFDRVS
+^:DFDRVS
+~:NEFLOP
+^:NEFLOP
+~:ACNCPI
+^:ACNCPI
+~:LENCPI
+^:LENCPI
+~:CLKDAT
+^:CLKDAT
+~:CLKLDT
+^:CLKLDT
+~:CLKINF
+^:CLKINF
+~:CDFDAT
+^:CDFDAT
+~:CDLDAT
+^:CDLDAT
+~:CAAFSR
+^:CAAFSR
+~:CACSRF
+^:CACSRF
+~:CAALSR
+^:CAALSR
+~:CACSRL
+^:CACSRL
+~:CLKDMN
+^:CLKDMN
+~:INSYNC
+^:INSYNC
+~:CBPAHI
+^:CBPAHI
+~:LFLTSE
+^:LFLTSE
+~:LFFTNE
+^:LFFTNE
+~:INFNOT
+^:INFNOT
+~:DALIAS
+^:DALIAS
+~:JKFFDT
+^:JKFFDT
+~:LATRAN
+^:LATRAN
+~:UNCONI
+^:UNCONI
+~:UNCONO
+^:UNCONO
+~:DIFCLK
+^:DIFCLK
+~:DIFRST
+^:DIFRST
+~:MLTDRV
+^:MLTDRV
+~:SUTHRU
+^:SUTHRU
+~:SEICLK
+^:SEICLK
+~:SMTCLK
+^:SMTCLK
+~:ASRTCK
+^:ASRTCK
+~:ASRTCL
+^:ASRTCL
+~:ASRTSC
+^:ASRTSC
+~:SCICLK
+^:SCICLK
+~:MULTCK
+^:MULTCK
+~:NOTCLK
+^:NOTCLK
+~:TCDFDT
+^:TCDFDT
+~:TCDLDT
+^:TCDLDT
+~:TCKDAT
+^:TCKDAT
+~:TCKLDT
+^:TCKLDT
+~:TXCNOP
+^:TXCNOP
+~:MEMNOP
+^:MEMNOP
+~:TENNOC
+^:TENNOC
+~:TENNOD
+^:TENNOD
+~:GLTASR
+^:GLTASR
+~:RSTEDG
+^:RSTEDG
+~:NOTSCN
+^:NOTSCN
+~:MCKNDB
+^:MCKNDB
+~:WENNDB
+^:WENNDB
+~:SCNLEN
+^:SCNLEN
+~:TMSCFF
+^:TMSCFF
+~:OUTMNR
+^:OUTMNR
+~:INPMNR
+^:INPMNR
+~:SRENSL
+^:SRENSL
+~:LDFFPI
+^:LDFFPI
+~:RSTDAT
+^:RSTDAT
+~:RSTGNH
+^:RSTGNH
+~:CLKGNH
+^:CLKGNH
+~:MXTSBC
+^:MXTSBC
+~:TSBNTH
+^:TSBNTH
+~:MXFNOT
+^:MXFNOT
+~:ATLGLC
+^:ATLGLC
+~:SLNOTP
+^:SLNOTP
+~:TPOUNR
+^:TPOUNR
+~:SELCLK
+^:SELCLK
+~:EDGMIX
+^:EDGMIX
+~:LGRSTL
+^:LGRSTL
+~:FRSTDL
+^:FRSTDL
+~:FRSTDF
+^:FRSTDF
+~:RSTDPT
+^:RSTDPT
+~:CLKDPT
+^:CLKDPT
+~:CLKUCL
+^:CLKUCL
+~:RSTUCL
+^:RSTUCL
+~:ENGTNR
+^:ENGTNR
+~:RSTDMN
+^:RSTDMN
+~:CLKNTP
+^:CLKNTP
+~:ADRSND
+^:ADRSND
+~:CGCENC
+^:CGCENC
+~:SEDFRS
+^:SEDFRS
+~:MULTCC
+^:MULTCC
+~:SMCKRS
+^:SMCKRS
+~:MEMNCB
+^:MEMNCB
+~:MTOMPH
+^:MTOMPH
+~:UVRFCN
+^:UVRFCN
+~:CONVRF
+^:CONVRF
+~:RSTENA
+^:RSTENA
+~:MOTINP
+^:MOTINP
+~:OPDNMT
+^:OPDNMT
+~:FENCNT
+^:FENCNT
+~:TPIUNR
+^:TPIUNR
+~:IPRTNR
+^:IPRTNR
+~:SYNPRT
+^:SYNPRT
+~:CONCLK
+^:CONCLK
+~:DATUNB
+^:DATUNB
+~:RSTINF
+^:RSTINF
+~:CKSMFC
+^:CKSMFC
+~:CDRNCF
+^:CDRNCF
+~:SAMESR
+^:SAMESR
+~:CGECCP
+^:CGECCP
+~:RSTNFR
+^:RSTNFR
+~:DTUNCP
+^:DTUNCP
+~:INSTCL
+^:INSTCL
+~:INSTCN
+^:INSTCN
+~:RSTCCK
+^:RSTCCK
+~:CGCPCK
+^:CGCPCK
+~:RSTCLK
+^:RSTCLK
+~:FFSRST
+^:FFSRST
+~:SGUNDV
+^:SGUNDV
+~:FFWASR
+^:FFWASR
+~:FFWNSR
+^:FFWNSR
+~:FFASRT
+^:FFASRT
+~:LCNSTD
+^:LCNSTD
+~:FFCSTD
+^:FFCSTD
+~:GENTOP
+^:GENTOP
+~:LTCHNT
+^:LTCHNT
+~:MLTDIO
+^:MLTDIO
+~:SYNASN
+^:SYNASN
+~:MULRST
+^:MULRST
+~:MCKDMN
+^:MCKDMN
+~:CLKGNP
+^:CLKGNP
+~:RSTGNP
+^:RSTGNP
+~:TSBINF
+^:TSBINF
+~:RTCDAT
+^:RTCDAT
+~:LENCPC
+^:LENCPC
+hal: *M,_SCOPE: __dummy_top

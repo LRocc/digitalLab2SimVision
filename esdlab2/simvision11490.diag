@@ -1,0 +1,87 @@
+*** Message Type: info ***
+When: Tue Mar 10 02:12:51 PM GMT 2020
+SimVision started.
+Version: TOOL:  simvision       15.20-s079
+User: CAMPUS\2265986r
+Host: ranklab329-18.eng-ad.gla.ac.uk
+Platform: Linux/x86_64/3.10.0-1062.1.1.el7.x86_64
+Started: Tue Mar 10 02:12:51 PM GMT 2020
+Command: /software/cadence-2019/INCISIVE152/tools.lnx86/simvision/bin/simvision.exe -connect dc:ranklab329-18.eng-ad.gla.ac.uk:53960
+Work Directory: /home/CAMPUS/2265986r/esdlab2
+ 
+*** Message Type: info ***
+When: Tue Mar 10 02:12:52 PM GMT 2020
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Tue Mar 10 02:12:55 PM GMT 2020
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Tue Mar 10 02:12:56 PM GMT 2020
+Connect to Simulator
+      Design: worklib.control:behavior
+   Languages: vhdl
+   Simulator: NC-Sim
+     Version: TOOL:      ncsim   15.20-s079
+        User: CAMPUS\2265986r
+        Host: ranklab329-18.eng-ad.gla.ac.uk
+Time Started: Tue Mar 10 02:12:51 PM GMT 2020
+  Process ID: 11489
+   Directory: /home/CAMPUS/2265986r/esdlab2
+     Command: ncsim -gui -cdslib /home/CAMPUS/2265986r/esdlab2/cds.lib -logfile ncsim.log -errormax 15 -status worklib.control:behavior
+
+ 
+*** Message Type: info ***
+When: Tue Mar 10 02:12:57 PM GMT 2020
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Tue Mar 10 02:14:04 PM GMT 2020
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Tue Mar 10 02:14:47 PM GMT 2020
+Delete browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Tue Mar 10 02:16:36 PM GMT 2020
+Create source window: "Source Browser 1"
+ 
+*** Message Type: info ***
+When: Tue Mar 10 02:16:38 PM GMT 2020
+Delete waveform window: "Waveform 1"
+ 
+*** Message Type: error ***
+When: Tue Mar 10 02:16:42 PM GMT 2020
+invalid command name "::timeaxis3"
+    while executing
+"$_timeaxis convert t2exp $time"
+    (method "::WaveWindow::seeTime" body line 2)
+    invoked from within
+"seeTime [$itk_option(-markerdata) marker cget  $itk_option(-markerprimary) -time]"
+    (method "::WaveWindow::_doGotoCause" body line 59)
+    invoked from within
+"_doGotoCause $cnode"
+    ("@goto-cause" arm line 2)
+    invoked from within
+"switch -glob -- $dclickpref {
+       @no-action {
+               # Do nothing
+       }
+            @goto-cause {
+                _doGotoCause $cnode
+            }
+           ..."
+    (method "::WaveWindow::_moveCursor" body line 337)
+    invoked from within
+"::.waveWindow0 _moveCursor cursor 216 210 -double"
+    (in namespace inscope "::WaveWindow" script line 1)
+    invoked from within
+"namespace inscope ::WaveWindow {::.waveWindow0 _moveCursor cursor 216 210 -double}"
+    (command bound to event)
+ 
+*** Message Type: info ***
+When: Tue Mar 10 02:16:45 PM GMT 2020
+SimVision Exit.
+ 

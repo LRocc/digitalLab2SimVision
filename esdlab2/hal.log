@@ -1,0 +1,262 @@
+hal: 15.20-s079: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+hal: Options:   -cdslib /home/CAMPUS/2265986r/esdlab2/cds.lib -logfile hal.log worklib.control:behavior.
+hal: Snapshot:  worklib.control:behavior.
+hal: Workspace: /home/CAMPUS/2265986r/esdlab2.
+hal: Date: Tue Feb 18 16:46:22 GMT 2020.
+
+hal: Running on elaborated SNAPSHOT.....
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck: 15.20-s079: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+visadev: 15.20-s079: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+    type states is (poll_fifo, setupA, setupB, setup_x, setup_y, data_xfer, data_yfer);
+|
+halcheck: *W,MAXLEN (./control.vhd,73|0): The HDL source line is 87 characters, which exceeds the recommended length of 80 characters.
+			if (available = '0') then 
+|
+halcheck: *W,CTLCHR (./control.vhd,112|0): HDL source line contains one or more control characters.
+				present_state <= poll_fifo;
+|
+halcheck: *W,CTLCHR (./control.vhd,113|0): HDL source line contains one or more control characters.
+			else  
+|
+halcheck: *W,CTLCHR (./control.vhd,114|0): HDL source line contains one or more control characters.
+				present_state <= setupA;
+|
+halcheck: *W,CTLCHR (./control.vhd,115|0): HDL source line contains one or more control characters.
+			end if;
+|
+halcheck: *W,CTLCHR (./control.vhd,116|0): HDL source line contains one or more control characters.
+			 
+|
+halcheck: *W,CTLCHR (./control.vhd,117|0): HDL source line contains one or more control characters.
+		
+|
+halcheck: *W,CTLCHR (./control.vhd,118|0): HDL source line contains one or more control characters.
+			enable <= '1';
+|
+halcheck: *W,CTLCHR (./control.vhd,121|0): HDL source line contains one or more control characters.
+			present_state <= setupB;
+|
+halcheck: *W,CTLCHR (./control.vhd,122|0): HDL source line contains one or more control characters.
+			
+|
+halcheck: *W,CTLCHR (./control.vhd,123|0): HDL source line contains one or more control characters.
+				
+|
+halcheck: *W,CTLCHR (./control.vhd,124|0): HDL source line contains one or more control characters.
+			
+|
+halcheck: *W,CTLCHR (./control.vhd,126|0): HDL source line contains one or more control characters.
+			if (data_in(0) = '1') then
+|
+halcheck: *W,CTLCHR (./control.vhd,127|0): HDL source line contains one or more control characters.
+				reqx <= '1';
+|
+halcheck: *W,CTLCHR (./control.vhd,128|0): HDL source line contains one or more control characters.
+				present_state <= data_xfer;
+|
+halcheck: *W,CTLCHR (./control.vhd,129|0): HDL source line contains one or more control characters.
+			elsif (data_in(0) = '0') then
+|
+halcheck: *W,CTLCHR (./control.vhd,130|0): HDL source line contains one or more control characters.
+				reqy <= '1';
+|
+halcheck: *W,CTLCHR (./control.vhd,131|0): HDL source line contains one or more control characters.
+				present_state <= data_yfer;
+|
+halcheck: *W,CTLCHR (./control.vhd,132|0): HDL source line contains one or more control characters.
+			end if; 
+|
+halcheck: *W,CTLCHR (./control.vhd,133|0): HDL source line contains one or more control characters.
+			
+|
+halcheck: *W,CTLCHR (./control.vhd,136|0): HDL source line contains one or more control characters.
+			write <= '1';		
+|
+halcheck: *W,CTLCHR (./control.vhd,142|0): HDL source line contains one or more control characters.
+			write <= '1';
+|
+halcheck: *W,CTLCHR (./control.vhd,146|0): HDL source line contains one or more control characters.
+            data_in : IN std_logic_vector(7 DOWNTO 0);
+|
+halcheck: *W,STYVAL (./control.vhd,62|0): Numeric value '7' used for identifier 'data_in'. Use constants to avoid portability issues.
+entity control is
+|
+halcheck: *N,PRTCNT (./control.vhd,54|0): Module/Entity 'control' contains '10' ports.
+halcheck: (./control.vhd,54): Number of Input ports: 6.
+halcheck: (./control.vhd,54): Number of Output ports: 4.
+    type states is (poll_fifo, setupA, setupB, setup_x, setup_y, data_xfer, data_yfer);
+|
+halcheck: *W,UCCONN (./control.vhd,73|0): Lowercase characters used for identifier 'states'. Use uppercase characters for names of constants and user-defined types.
+    signal present_state : states;
+|
+halcheck: *W,BEHINI (./control.vhd,77|0): A behavioral variable/signal 'present_state' is not initialized in its declaration.
+    process (clk, reset)
+|
+halcheck: *W,NOBLKN (./control.vhd,83|0): Each block should be labeled with a meaningful name.
+        if (reset = '0') then
+|
+halcheck: *N,ALOWID (./control.vhd,89|0): Signal/variable name 'reset' does not follow the active-low naming convention : should end with '_n'.
+            case present_state is
+|
+halcheck: *W,CDEFCV (./control.vhd,109|0): The case items of the case statement in module/design-unit CONTROL:BEHAVIOR cover all the numerical values of the case expression. The default clause is not required.
+			if (available = '0') then 
+|
+halcheck: *N,ALOWID (./control.vhd,112|0): Signal/variable name 'available' does not follow the active-low naming convention : should end with '_n'.
+			elsif (data_in(0) = '0') then
+|
+halcheck: *N,ALOWID (./control.vhd,130|0): Signal/variable name 'data_in(0)' does not follow the active-low naming convention : should end with '_n'.
+    signal present_state : states;
+|
+halcheck: *W,PROSIG (./control.vhd,77|0): Signal 'PRESENT_STATE' defined in architecture 'behavior' is used inside only one process. Use variable instead.
+            data_in : IN std_logic_vector(7 DOWNTO 0);
+|
+halcheck: *W,USEPRT (./control.vhd,62|0): The input/inout port 'data_in(7 downto 1)' defined in the architecture 'behavior' is unused (neither read nor assigned).
+            gntx : IN std_logic;
+|
+halcheck: *W,USEPRT (./control.vhd,63|0): The input/inout port 'gntx' defined in the architecture 'behavior' is unused (neither read nor assigned).
+            gnty : IN std_logic;
+|
+halcheck: *W,USEPRT (./control.vhd,64|0): The input/inout port 'gnty' defined in the architecture 'behavior' is unused (neither read nor assigned).
+            available : IN std_logic;
+|
+halcheck: *N,INPPRT (./control.vhd,60|0): Input port 'available' does not follow the layout convention.
+            clk : IN std_logic;
+|
+halcheck: *N,CLKPRT (./control.vhd,61|0): Clock port 'clk' does not follow the layout convention.
+            data_in : IN std_logic_vector(7 DOWNTO 0);
+|
+halcheck: *N,INPPRT (./control.vhd,62|0): Input port 'data_in' does not follow the layout convention.
+            gntx : IN std_logic;
+|
+halcheck: *N,INPPRT (./control.vhd,63|0): Input port 'gntx' does not follow the layout convention.
+            gnty : IN std_logic;
+|
+halcheck: *N,INPPRT (./control.vhd,64|0): Input port 'gnty' does not follow the layout convention.
+            reset : IN std_logic
+|
+halcheck: *N,RSTPRT (./control.vhd,65|0): Reset port 'reset' does not follow the layout convention.
+entity control is
+|
+halcheck: *W,USEPKG (./control.vhd,54|0): Package 'NUMERIC_STD' is declared but no object is used from it.
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 33.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe: 15.20.079-s(15.20.s079): (c) Copyright 1995 - 2019 Cadence Design Systems, Inc.
+cfe Build : Wed Oct  9 23:57:44 IST 2019 ldvopt244
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+            case present_state is
+|
+halsynth: *N,FSMIDN (./control.vhd,109|0): In module/design-unit 'control:behavior', FSM for state register 'present_state' has been recognized.
+    process (clk, reset)
+|
+halsynth: *W,BADFSM (./control.vhd,83|0): In module/design-unit 'control:behavior', FSM for state register 'present_state' does not adhere to modeling style guidelines.
+                when setupA =>
+|
+halsynth: *W,TRNMBT (./control.vhd,119|0): For the specified state 'SETUPA', the state value changes by more than one bits on transition to state(s): SETUPB.
+			present_state <= setupB;
+|
+halsynth: (./control.vhd,122|0): Source HDL information for the error/warning mentioned above.
+                when setupB =>
+|
+halsynth: *W,TRNMBT (./control.vhd,125|0): For the specified state 'SETUPB', the state value changes by more than one bits on transition to state(s): DATA_XFER.
+				present_state <= data_xfer;
+|
+halsynth: (./control.vhd,129|0): Source HDL information for the error/warning mentioned above.
+                when setup_x =>
+|
+halsynth: *W,TRNMBT (./control.vhd,135|0): For the specified state 'SETUP_X', the state value changes by more than one bits on transition to state(s): POLL_FIFO.
+            present_state <= poll_fifo;
+|
+halsynth: (./control.vhd,103|0): Source HDL information for the error/warning mentioned above.
+                when data_xfer =>
+|
+halsynth: *W,TRNMBT (./control.vhd,141|0): For the specified state 'DATA_XFER', the state value changes by more than one bits on transition to state(s): POLL_FIFO.
+            present_state <= poll_fifo;
+|
+halsynth: (./control.vhd,103|0): Source HDL information for the error/warning mentioned above.
+                when data_yfer =>
+|
+halsynth: *W,TRNMBT (./control.vhd,145|0): For the specified state 'DATA_YFER', the state value changes by more than one bits on transition to state(s): POLL_FIFO.
+            present_state <= poll_fifo;
+|
+halsynth: (./control.vhd,103|0): Source HDL information for the error/warning mentioned above.
+            case present_state is
+|
+halsynth: *E,UNRCHS (./control.vhd,109|0): In module/design-unit 'control:behavior', FSM for state register 'present_state' has unreachable states SETUP_X, SETUP_Y.
+                when setup_x =>
+|
+halsynth: (./control.vhd,135|0): Source HDL information for the error/warning mentioned above.
+                when setup_y =>
+|
+halsynth: (./control.vhd,138|0): Source HDL information for the error/warning mentioned above.
+architecture behavior of control is
+|
+halsynth: *W,EXTFSM (./control.vhd,69|0): Extraneous logic present in module/design-unit 'control:behavior' that encodes an FSM.
+halsynth: Total errors   = 1.
+halsynth: Total warnings = 7.
+
+  ==========================================================================
+Performing structural checks 
+
+halstruct: 15.20-s079: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+visadev: 15.20-s079: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+            present_state <= poll_fifo;
+|
+halstruct: *N,FFASRT (./control.vhd,103|0): Flip-flop 'present_state' has an asynchronous reset 'reset'.
+            clk : IN std_logic;
+|
+halstruct: *N,CLKINF (./control.vhd,61|0): Signal ':clk' was inferred as clock.
+halstruct: (./control.vhd,61): Clock source is signal ':clk'.
+halstruct: (./control.vhd,103): Drives the flip-flop ':present_state'.
+            enable <= '0';
+|
+halstruct: *N,FFASRT (./control.vhd,104|0): Flip-flop 'enable' has an asynchronous reset 'reset'.
+            reqx <= '0';
+|
+halstruct: *N,FFASRT (./control.vhd,105|0): Flip-flop 'reqx' has an asynchronous reset 'reset'.
+            reqy <= '0';
+|
+halstruct: *N,FFASRT (./control.vhd,106|0): Flip-flop 'reqy' has an asynchronous reset 'reset'.
+			write <= '1';
+|
+halstruct: *N,FFASRT (./control.vhd,146|0): Flip-flop 'write' has an asynchronous reset 'reset'.
+architecture behavior of control is
+|
+halstruct: *N,NUMDFF (./control.vhd,69|0): Number of single-bit D flip-flops present in the hierarchy is 7.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 0.
+halstruct: Total warnings = 0.
+
+  ==========================================================================
+
+Analysis summary :
+
+ Errors   : (1)
+  UNRCHS (1)     
+
+ Warnings : (40)
+  BADFSM (1)      BEHINI (1)      CDEFCV (1)      CTLCHR (22)    
+  EXTFSM (1)      MAXLEN (1)      NOBLKN (1)      PROSIG (1)     
+  STYVAL (1)      TRNMBT (5)      UCCONN (1)      USEPKG (1)     
+  USEPRT (3)     
+
+ Notes    : (18)
+  ALOWID (3)      CLKINF (1)      CLKPRT (1)      FFASRT (5)     
+  FSMIDN (1)      INPPRT (4)      NUMDFF (1)      PRTCNT (1)     
+  RSTPRT (1)     
+
+Analysis complete.
+
+ ==========================================================================
+
+To analyze results, run following command :
+    ncbrowse -cdslib /home/CAMPUS/2265986r/esdlab2/cds.lib -sortby severity -sortby category -sortby tag hal.log
+

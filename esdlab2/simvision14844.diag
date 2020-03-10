@@ -1,0 +1,86 @@
+*** Message Type: info ***
+When: Tue Mar 10 02:43:43 PM GMT 2020
+SimVision started.
+Version: TOOL:  simvision       15.20-s079
+User: CAMPUS\2265986r
+Host: ranklab329-18.eng-ad.gla.ac.uk
+Platform: Linux/x86_64/3.10.0-1062.1.1.el7.x86_64
+Started: Tue Mar 10 02:43:43 PM GMT 2020
+Command: /software/cadence-2019/INCISIVE152/tools.lnx86/simvision/bin/simvision.exe -connect dc:ranklab329-18.eng-ad.gla.ac.uk:59774
+Work Directory: /home/CAMPUS/2265986r/esdlab2
+ 
+*** Message Type: info ***
+When: Tue Mar 10 02:43:43 PM GMT 2020
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Tue Mar 10 02:43:47 PM GMT 2020
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Tue Mar 10 02:43:48 PM GMT 2020
+Exit Simulator: abnormal
+      Design: Unknown
+   Languages: Unknown
+   Simulator: Unknown
+     Version: Unknown
+        User: Unknown
+        Host: Unknown
+Time Started: Unknown
+  Process ID: Unknown
+   Directory: Unknown
+     Command: Unknown
+
+ 
+*** Message Type: error ***
+When: Tue Mar 10 02:43:48 PM GMT 2020
+Simulator Crashed:
+      Design: Unknown
+   Languages: Unknown
+   Simulator: Unknown
+     Version: Unknown
+        User: Unknown
+        Host: Unknown
+Time Started: Unknown
+  Process ID: Unknown
+   Directory: Unknown
+     Command: Unknown
+      Design: Unknown
+   Languages: Unknown
+   Simulator: Unknown
+     Version: Unknown
+        User: Unknown
+        Host: Unknown
+Time Started: Unknown
+  Process ID: Unknown
+   Directory: Unknown
+     Command: Unknown
+
+Outstanding STRAP Requests:
+        strap::get g . -xu
+        strap::get g . -ck
+        strap::get g . -sa
+ 
+*** Message Type: info ***
+When: Tue Mar 10 02:43:48 PM GMT 2020
+Connect to Simulator
+      Design: Unknown
+   Languages: Unknown
+   Simulator: Unknown
+     Version: Unknown
+        User: Unknown
+        Host: Unknown
+Time Started: Unknown
+  Process ID: Unknown
+   Directory: Unknown
+     Command: Unknown
+
+ 
+*** Message Type: info ***
+When: Tue Mar 10 02:43:50 PM GMT 2020
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Tue Mar 10 02:43:54 PM GMT 2020
+SimVision Exit.
+ 
